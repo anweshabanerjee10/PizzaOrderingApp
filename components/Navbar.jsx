@@ -1,6 +1,4 @@
 import Image from "next/image";
-import React from "react";
-
 import styles from "../src/styles/Navbar.module.css";
 
 const Navbar = () => {
@@ -8,12 +6,7 @@ const Navbar = () => {
     <div className={styles.container}>
       <div className={styles.item}>
         <div className={styles.callButton}>
-          <Image
-            src="/../public/img/telephone.png"
-            alt=""
-            width="32"
-            height="32"
-          />
+          <Image src="/img/telephone.png" alt="" width="32" height="32" />
         </div>
         <div className={styles.texts}>
           <div className={styles.text}>ORDER NOW!</div>
@@ -22,10 +15,10 @@ const Navbar = () => {
       </div>
       <div className={styles.item}>
         <ul className={styles.list}>
-          <li className={styles.listItem}>HomePage</li>
+          <li className={styles.listItem}>Homepage</li>
           <li className={styles.listItem}>Products</li>
           <li className={styles.listItem}>Menu</li>
-          <Image src="/../public/img/logo.png" alt="" width="160" height="69" />
+          <Image src="/img/logo.png" alt="" width="160" height="69" />
           <li className={styles.listItem}>Events</li>
           <li className={styles.listItem}>Blog</li>
           <li className={styles.listItem}>Contact</li>
@@ -33,8 +26,7 @@ const Navbar = () => {
       </div>
       <div className={styles.item}>
         <div className={styles.cart}>
-          <Image src="/../public/img/cart.png" alt="" width="30" height="30" />
-
+          <Image src="/img/cart.png" alt="" width="30" height="30" />
           <div className={styles.counter}>2</div>
         </div>
       </div>
