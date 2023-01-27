@@ -1,6 +1,5 @@
 .container {
     width: 22%;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,4 +23,20 @@
 .desc {
     text-align: center;
     color: #777;
+}
+
+@media screen and (max-width:480px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .price,
+    .desc {
+        font-size: 24px;
+    }
 }

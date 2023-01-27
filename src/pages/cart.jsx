@@ -15,14 +15,14 @@ const cart = () => {
             <th>Quantity</th>
             <th>Total</th>
           </tr>
-          <tr>
+          <tr className={styles.tr}>
             <td>
               <div className={styles.imgContainer}>
                 <Image
                   src="/img/pizza.png"
-                  alt=""
                   layout="fill"
                   objectFit="cover"
+                  alt=""
                 />
               </div>
             </td>
@@ -75,7 +75,6 @@ const cart = () => {
           </tr>
         </table>
       </div>
-
       <div className={styles.right}>
         <div className={styles.wrapper}>
           <h2 className={styles.title}>CART TOTAL</h2>
