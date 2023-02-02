@@ -16,7 +16,7 @@ const Index = ({ orders, products }) => {
       );
       setPizzaList(pizzaList.filter((pizza) => pizza._id !== id));
     } catch (err) {
-      console.log(err.response);
+      console.log(err);
     }
   };
 
@@ -33,7 +33,7 @@ const Index = ({ orders, products }) => {
         ...orderList.filter((order) => order._id !== id),
       ]);
     } catch (err) {
-      console.log(err.response);
+      console.log(err);
     }
   };
 
@@ -116,6 +116,7 @@ const Index = ({ orders, products }) => {
     </div>
   );
 };
+
 export const getServerSideProps = async (ctx) => {
   const myCookie = ctx.req?.cookies || "";
 
@@ -127,6 +128,7 @@ export const getServerSideProps = async (ctx) => {
       },
     };
   }
+
   const productRes = await axios.get("http://localhost:3000/api/products");
   const orderRes = await axios.get("http://localhost:3000/api/orders");
 
